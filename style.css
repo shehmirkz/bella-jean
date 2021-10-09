@@ -1,0 +1,381 @@
+
+.header {
+    background-image: url(./images/shutterstock_628764224.png);
+    background-repeat: no-repeat;
+    padding: 80px 0 275px 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0.9;
+}
+
+.header:before {
+    content: "";
+    background: url(./images/layer.png);
+    width: 100%;
+    opacity: 0.6;
+    top: 60px;
+    left: 0;
+    bottom: 152px;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+  }
+
+.navbar {
+    padding: 0 85px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+
+.main-monogram {
+    display: none !important;
+}
+
+.center-monogram {
+    margin-left: 50px;
+}
+
+.nav-item {
+    margin-right: 30px;
+}
+.nav-link {
+    cursor: pointer;
+    color: black;
+}
+.nav-link:hover {
+    color: #fff !important;
+    background-color: rgba(128, 128, 128, 0.377) !important;
+    border-top: 2px solid blue;
+}
+.header-section {
+    padding: 0 44px;
+}
+
+.header-title {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 40px;
+}
+
+.header-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 69px;
+    font-size: 50px;
+    padding-top: 20px;
+}
+.header-sub-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.header-button {
+    position: relative;
+    padding: 8px 40px !important;
+    background-color: #1b1f66 !important;
+    border: none;
+    margin-bottom: 25px;
+}
+
+.right-arrow {
+    top: 11px;
+    position: absolute;
+    left: 117px;
+}
+
+.right-banner {
+    position: relative;
+}
+
+.right-banner-image {
+    position: absolute;
+    top: 189px;
+    right: 108px;
+    width: 90%;
+}
+
+.btn-banner {
+    background-color: #0560a7 !important;
+    padding: 20px 30px !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    border-color: #0560a7 !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 45px !important;
+    position: absolute;
+    top: 484px;
+    right: 477px;
+}
+
+.btn-group {
+    position: absolute !important;
+    left: 1027px;
+    right: 523px;
+    top: 857px;
+    bottom: 0;
+}
+
+.btn-transparent {
+    border-color: rgba(0, 0, 0, 0.158);
+}
+
+.btn-transparent:hover{
+    color: rgba(255, 255, 0, 0.719) !important;
+    border-color: rgba(220, 220, 220, 0) !important;
+}
+
+.button-border {
+    border-right: 1px solid #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////Media Query For Responsive//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) and (max-width: 1300px ) {
+
+    .main-monogram {
+        display: none !important;
+    }
+
+    .header {
+        padding: 80px 0px 185px;
+    }
+    .right-banner-image {
+        position: absolute;
+        top: 219px;
+        right: 129px;
+        width: 90%;
+    }
+
+    .btn-banner {
+        position: absolute;
+        top: 455px;
+        right: 444px;
+    }
+    .btn-group {
+        position: absolute !important;
+        left: 825px;
+        right: 519px;
+        top: 840px;
+        bottom: 0;
+    }
+
+
+
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .main-monogram {
+        display: block !important;
+    }
+    .center-monogram {
+        display: none;
+    }
+
+    .header {
+        padding: 80px 0px 185px;
+    }
+    .right-banner-image {
+        position: absolute;
+        top: 321px;
+        right: 114px;
+        width: 90%;
+    }
+
+    .btn-banner {
+        position: absolute;
+        top: 496px;
+        right: 375px;
+    }
+    
+    .btn-group {
+        position: absolute !important;
+        left: 630px;
+        right: 519px;
+        top: 770px;
+        bottom: 0;
+    }
+
+
+
+
+
+
+
+  
+}
+
+                                            /* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .main-monogram {
+        display: block !important;
+    }
+    .center-monogram {
+        display: none;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .header {
+        padding: 47px 0px 100px;
+    }
+    .header-heading {
+        font-size: 40px;
+    }
+    .right-banner-image {
+        position: absolute;
+        top: 269px;
+        right: 59px;
+        width: 100%;
+    }
+
+    .btn-banner {
+        position: absolute;
+        top: 421px;
+        right: 299px;
+    }
+    
+    .btn-group {
+        position: absolute !important;
+        left: 518px;
+        right: 509px;
+        top: 758px;
+        bottom: 0;
+    }
+    .header-section {
+        padding: 0 0px;
+    }
+
+
+
+
+
+      
+}
+
+                                    /* Landscape phones and portrait tablets */
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .main-monogram {
+        display: block !important;
+    }
+    .center-monogram {
+        display: none;
+    }
+    .navbar {
+        padding: 0 18px;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    .header {
+        padding: 47px 0px 100px;
+    }
+    .header-heading {
+        font-size: 26px;
+        line-height: 33px;
+        padding-top: 1px;
+    }
+    .right-banner-image {
+        position: absolute;
+        top: 242px;
+        right: 20px;
+        width: 100%;
+    }
+
+    .btn-banner {
+        position: absolute;
+        top: 332px;
+        right: 180px;
+        padding: 8px 20px !important;
+    }
+    
+    .btn-group {
+        position: absolute !important;
+        left: 327px;
+        right: 509px;
+        top: 639px;
+        bottom: 0;
+    }
+    .header-section {
+        padding: 0 0px;
+    }
+
+
+
+
+
+}
+
+                                        /* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .main-monogram {
+        display: block !important;
+    }
+    .center-monogram {
+        display: none;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    .navbar {
+        padding: 0 18px;
+    }
+
+    .header {
+        padding: 47px 0px 100px;
+    }
+    .header-heading {
+        font-size: 26px;
+        line-height: 33px;
+        padding-top: 1px;
+    }
+    .right-banner-image {
+        display: none;
+    }
+
+    .btn-banner {
+       display: none;
+    }
+    
+    .btn-group {
+        position: absolute !important;
+        left: 132px;
+        top: 647px;
+        bottom: 0;
+    }
+    .header-section {
+        padding: 0 0px;
+    }
+
+
+
+}
