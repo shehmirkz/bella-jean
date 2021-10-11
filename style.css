@@ -211,6 +211,12 @@
     font-size: 20px;
 }
 
+
+.footer-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
 #footer-text {
     color: gray !important;
     font-size: 12px;
