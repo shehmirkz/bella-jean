@@ -211,6 +211,43 @@
     font-size: 20px;
 }
 
+#footer-text {
+    color: gray !important;
+    font-size: 12px;
+}
+
+#footer-text:hover {
+    color: #748a53 !important;
+}
+
+.footer-copywrite {
+    font-size: 14px;
+    color: gray !important;
+    margin-left: 20px;
+}
+
+.footer-copywrite-b {
+    color: gray !important;
+    margin: 0 20px 0 110px;
+}
+
+#footer-icon {
+    color: gray !important;
+    font-size: 22px;
+    margin-right: 30px;
+}
+
+#footer-icon-b {
+    color: gray !important;
+    margin-right: 22px;
+}
+#footer-icon-b:hover {
+    color: #748a53 !important;
+}
+
+.copywright-bar {
+    display: flex;
+}
 
 
 
@@ -459,7 +496,15 @@
         bottom: 27px;
     }
 
+    .copywright-bar {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .footer-copywrite-b {
+        color: gray !important;
+        margin: 0 !important;
+    }
 
 
 
@@ -531,6 +576,32 @@
         display: none;
     }
 
+    .card-img-overlay {
+        position: absolute;
+        top: 343px !important;
+        right: 0;
+        bottom: 0;
+        left: 11px !important;
+    }
+
+    .copywright-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-copywrite-b {
+        color: gray !important;
+        margin: 0 !important;
+    }
+
+    .footer-copywrite {
+        margin-left: 0 !important;
+    }
+
+    #footer-icon {
+        font-size: 16px;
+        margin-right: 14px;
+    }
 
 
 }
