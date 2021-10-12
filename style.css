@@ -255,6 +255,45 @@
     display: flex;
 }
 
+.option-button {
+    left: 261px;
+    right: 0;
+    position: absolute;
+}
+
+
+.button-hover {
+    display: none;
+    cursor: pointer;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+.button-hover:hover {
+    display: block !important;
+    background-color: rgba(190, 190, 190, 0.938) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 18px 12px !important;
+}
+
+.button-hover-b {
+    display: none;
+    cursor: pointer;
+    background-color: #f4f4f4 !important;
+    border-color: #f4f4f4 !important;
+}
+.button-hover-b:hover {
+    display: block !important;
+    background-color: rgba(190, 190, 190, 0.938) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 18px 12px !important;
+}
+
 
 
 
