@@ -361,6 +361,20 @@
         bottom: 27px;
     }
 
+    .option-button {
+        left: 218px;
+        right: 0;
+        position: absolute;
+    }
+
+    .button-hover:hover {
+        padding: 18px 8px !important;
+    }
+
+    .button-hover-b:hover {
+        padding: 18px 8px !important;
+    }
+
 
 
 }
@@ -408,7 +422,15 @@
         right: 0;
         bottom: 27px;
     }
+    .option-button {
+        left: 171px;
+        right: 0;
+        position: absolute;
+    }
 
+    .button-hover-b:hover {
+        padding: 18px 8px !important;
+    }
 
 
 
@@ -473,8 +495,15 @@
         bottom: 27px;
     }
 
+    .option-button {
+        left: 111px;
+        right: 0;
+        position: absolute;
+    }
 
-
+    .button-hover-b:hover {
+        padding: 18px 5px !important;
+    }
 
       
 }
@@ -647,6 +676,12 @@
     #footer-icon {
         font-size: 16px;
         margin-right: 14px;
+    }
+
+    .option-button {
+        left: 305px;
+        right: 0;
+        position: absolute;
     }
 
 
