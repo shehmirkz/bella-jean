@@ -360,11 +360,73 @@
     font-size: 20px;
 }
 
+.discription-row {
+    text-align: center;
+    padding: 50px 0 150px 0;
+}
+
+.discription-buttons {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
 
 
+.discription-back {
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
 
+.discription-next {
+    padding-left: 10px;
+}
 
+.discription-back:hover {
+    color: #748a53;
+}
+.discription-next:hover {
+    color: #748a53;
+}
 
+.discription-detail {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.discription-girl {
+    padding-bottom: 25px;
+}
+
+.discription-comma {
+    padding-bottom: 20px;
+}
+
+.discription-girl-name {
+    padding-bottom: 50px;
+}
+
+.discription-web-design {
+    color: #88a35e;
+}
+.discription-slider {
+    position: relative;
+}
+
+#discription-left-slider {
+    position: absolute;
+    right: 1197px;
+    left: 0;
+    top: 31px;
+    bottom: 0;
+}
+
+#discription-right-slider {
+    position: absolute;
+    right: 0px;
+    left: 1197px;
+    top: 31px;
+    bottom: 0;
+}
 
 
 
@@ -455,6 +517,22 @@
         left: 11px !important;
     }
 
+    #discription-left-slider {
+        position: absolute;
+        right: 885px;
+        left: 0;
+        top: 31px;
+        bottom: 0;
+    }
+    
+    #discription-right-slider {
+        position: absolute;
+        right: 0px;
+        left: 885px;
+        top: 31px;
+        bottom: 0;
+    }
+
 }
 
 /* Portrait tablets and medium desktops */
@@ -528,6 +606,21 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 16px;
+    }
+    #discription-left-slider {
+        position: absolute;
+        right: 885px;
+        left: 0;
+        top: 31px;
+        bottom: 0;
+    }
+    
+    #discription-right-slider {
+        position: absolute;
+        right: 0px;
+        left: 885px;
+        top: 31px;
+        bottom: 0;
     }
   
 }
@@ -632,6 +725,13 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 11px;
+    }
+    #discription-left-slider {
+        display: none !important;
+    }
+    
+    #discription-right-slider {
+        display: none !important;
     }
 
       
@@ -742,8 +842,18 @@
         font-weight: 400;
         font-size: 20px;
     }
-
-
+    #discription-left-slider {
+        display: none !important;
+    }
+    
+    #discription-right-slider {
+        display: none !important;
+    }
+    .option-button {
+        left: 409px;
+        right: 0;
+        position: absolute;
+    }
 
 }
 
@@ -876,6 +986,13 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         font-size: 18px;
+    }
+    #discription-left-slider {
+        display: none !important;
+    }
+    
+    #discription-right-slider {
+        display: none !important;
     }
 
 }
