@@ -199,9 +199,9 @@
     padding-bottom: 50px;
 }
 
-.card-img-overlay {
+.product-overlay {
     position: absolute;
-    top: 241px !important;
+    top: 259px !important;
     right: 0;
     bottom: 0;
     left: 11px !important;
@@ -295,6 +295,71 @@
 }
 
 
+.discovery {
+    background-image: url(./images/discovery.png);
+    background-repeat: no-repeat;
+    height: 800px;
+    width: 100%;
+}
+
+.discovery-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    padding: 150px 0 0 0;
+    text-align: center;
+    line-height: 71px;
+}
+
+.discovery-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.discovery-button {
+    margin-bottom: 50px;
+}
+
+.deal-hr-left {
+    width: 3%;
+    height: 2px !important;
+    position: relative;
+    left: 490px;
+    top: 30px;
+    color: black !important;
+}
+
+.deal-hr-right {
+    width: 3%;
+    height: 2px !important;
+    position: relative;
+    left: 770px;
+    right: 0;
+    bottom: 27px;
+    color: black !important;
+}
+
+.deal-price {
+    color: #6fc446;
+}
+.icon-star-o {
+    color: #e0d111;
+    margin-left: -4px;
+    float: right;
+}
+
+.deal-overlay {
+    position: absolute;
+    top: 259px !important;
+    right: 0;
+    bottom: 0;
+    left: 11px !important;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 
 
 
@@ -375,7 +440,20 @@
         padding: 18px 8px !important;
     }
 
+    .deal-overlay {
+        position: absolute;
+        top: 201px !important;
+        right: 0;
+        bottom: 0;
+        left: 11px !important;
+    }
 
+    .product-overlay {
+        top: 236px !important;
+        right: 0;
+        bottom: 0;
+        left: 11px !important;
+    }
 
 }
 
@@ -431,13 +509,30 @@
     .button-hover-b:hover {
         padding: 18px 8px !important;
     }
+    .deal-overlay {
+        position: absolute;
+        top: 163px !important;
+        right: 0;
+        bottom: 0;
+        left: 0px !important;
+        font-size: 16px;
+    }
 
-
-
-
-
+    .product-overlay {
+        position: absolute;
+        top: 186px !important;
+        right: 0;
+        bottom: 0;
+        left: 11px !important;
+        padding: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
   
 }
+
+
 
                                             /* Portrait tablets and small desktops */
 
@@ -503,6 +598,40 @@
 
     .button-hover-b:hover {
         padding: 18px 5px !important;
+    }
+
+    .deal-hr-right {
+        position: relative;
+        left: 489px;
+        right: 0;
+        bottom: 27px;
+    }
+
+    .deal-hr-left {
+        position: relative;
+        left: 185px;
+        top: 30px;
+    }
+
+    .deal-overlay {
+        position: absolute;
+        top: 116px !important;
+        right: 0;
+        bottom: 0;
+        left: 0px !important;
+        font-size: 12px;
+    }
+
+    .product-overlay {
+        position: absolute;
+        top: 136px !important;
+        right: 0;
+        bottom: 0;
+        left: 11px !important;
+        padding: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 11px;
     }
 
       
@@ -578,6 +707,40 @@
     .footer-copywrite-b {
         color: gray !important;
         margin: 0 !important;
+    }
+
+    .deal-hr-right {
+        position: relative;
+        left: 366px;
+        right: 0;
+        bottom: 27px;
+    }
+
+    .deal-hr-left {
+        position: relative;
+        left: 128px;
+        top: 30px;
+    }
+
+    .deal-overlay {
+        position: absolute;
+        top: 397px !important;
+        right: 0;
+        bottom: 0;
+        left: 0px !important;
+        font-size: 20px;
+    }
+
+    .product-overlay {
+        position: absolute;
+        top: 400px !important;
+        right: 0;
+        bottom: 0;
+        left: 11px !important;
+        padding: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
     }
 
 
@@ -684,5 +847,33 @@
         position: absolute;
     }
 
+    .discovery-heading {
+        padding: 0 !important;
+    }
 
+    .deal-hr-right {
+        position: relative;
+        left: 286px;
+        right: 0;
+        bottom: 27px;
+    }
+
+    .deal-hr-left {
+        position: relative;
+        left: 46px;
+        top: 30px;
+    }
+
+    .deal-overlay {
+        position: absolute;
+        top: 321px !important;
+        right: 0;
+        bottom: 0;
+        left: 0px !important;
+        font-size: 18px;
+    
+    }
+
+
+}
 }
