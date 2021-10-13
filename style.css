@@ -739,7 +739,125 @@
 
                                     /* Landscape phones and portrait tablets */
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 564px) and (max-width: 768px) {
+    .main-monogram {
+        display: block !important;
+    }
+    .center-monogram {
+        display: none;
+    }
+    .navbar {
+        padding: 0 18px;
+    }
+    .navbar-nav {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+    }
+
+    .header {
+        padding: 47px 0px 100px;
+    }
+    .header-heading {
+        font-size: 26px;
+        line-height: 33px;
+        padding-top: 1px;
+    }
+    .right-banner-image {
+        position: absolute;
+        top: 242px;
+        right: 20px;
+        width: 100%;
+    }
+
+    .btn-banner {
+        position: absolute;
+        top: 353px;
+        right: 200px;
+        padding: 8px 20px !important;
+    }
+    
+    .btn-group {
+        position: absolute !important;
+        left: 327px;
+        right: 509px;
+        top: 639px;
+        bottom: 0;
+    }
+    .header-section {
+        padding: 0 0px;
+    }
+
+    .popular-hr-left {
+        left: 32px;
+        top: 30px;
+    }
+    
+    .popular-hr-right {
+        left: 459px;
+        right: 0;
+        bottom: 27px;
+    }
+
+    .copywright-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-copywrite-b {
+        color: gray !important;
+        margin: 0 !important;
+    }
+
+    .deal-hr-right {
+        position: relative;
+        left: 366px;
+        right: 0;
+        bottom: 27px;
+    }
+
+    .deal-hr-left {
+        position: relative;
+        left: 128px;
+        top: 30px;
+    }
+
+    .deal-overlay {
+        position: absolute;
+        top: 197px !important;
+        right: 0;
+        bottom: 0;
+        left: 0px !important;
+        font-size: 15px;
+    }
+
+    .product-overlay {
+        position: absolute;
+        top: 225px !important;
+        right: 0;
+        bottom: 0;
+        left: 11px !important;
+        padding: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+    }
+    #discription-left-slider {
+        display: none !important;
+    }
+    
+    #discription-right-slider {
+        display: none !important;
+    }
+    .option-button {
+        left: 202px;
+        right: 0;
+        position: absolute;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 564px) {
     .main-monogram {
         display: block !important;
     }
