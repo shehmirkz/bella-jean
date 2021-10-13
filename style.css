@@ -813,14 +813,6 @@
         display: none;
     }
 
-    .card-img-overlay {
-        position: absolute;
-        top: 343px !important;
-        right: 0;
-        bottom: 0;
-        left: 11px !important;
-    }
-
     .copywright-bar {
         display: flex;
         flex-direction: column;
@@ -866,7 +858,7 @@
 
     .deal-overlay {
         position: absolute;
-        top: 321px !important;
+        top: 309px !important;
         right: 0;
         bottom: 0;
         left: 0px !important;
@@ -874,6 +866,16 @@
     
     }
 
+    .product-overlay {
+        position: absolute;
+        top: 303px !important;
+        right: 0;
+        bottom: 0;
+        left: 11px !important;
+        padding: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+    }
 
-}
 }
