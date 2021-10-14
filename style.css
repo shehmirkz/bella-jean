@@ -138,8 +138,6 @@
     padding: 100px 50px 50px 50px;
 }
 
-
-
 .grid-images {
     width: 100%;
     height: 100%;
@@ -261,10 +259,6 @@
 }
 
 
-
-
-
-
 .product-grid ul {
     padding: 0;
     margin: 0;
@@ -317,12 +311,13 @@
 }
 
 
-li .product-image::before {
+li .product-image:before {
     content: attr(title);
     background-color: #dc8345;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    padding: 3px 10px;
+    font-weight: 100;
+    padding: 0px 8px;
     position: absolute;
     top: 12px;
     left: 12px;
@@ -361,80 +356,6 @@ del {
     position: relative;
     top: 19px;
 }
-
-
-
-
-
-
-
-
-/* 
-.card {
-    height: 130%;
-    width: 100%;
-}
-
-.card img {
-    width: 100%;
-}
-
-.card:hover .option-button {
-    display: block;
-}
-
-.option-button {
-    left: 261px;
-    right: 0;
-    position: absolute;
-    display: none;
-    cursor: pointer;
-    background-color: rgba(190, 190, 190, 0.938) !important;
-}
-
-
-.button-hover {
-    display: none;
-    cursor: pointer;
-    /* background-color: #fff !important;
-    border-color: #fff !important; */
-/* }
-.button-hover:hover {
-    display: block !important;
-    background-color: rgba(190, 190, 190, 0.938) !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 18px 12px !important;
-}
-
-.button-hover-b {
-    display: none;
-    cursor: pointer;
-    /* background-color: #f4f4f4 !important;
-    border-color: #f4f4f4 !important; */
-/* } */ 
-/* .button-hover-b:hover {
-    display: block !important;
-    background-color: rgba(190, 190, 190, 0.938) !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 18px 12px !important;
-} */ 
-
-
-
-
-
-
-
-
-
-
-
 
 
 .discovery {
@@ -500,7 +421,7 @@ del {
 
 .discription-row {
     text-align: center;
-    padding: 50px 0 150px 0;
+    padding: 50px 0 110px 0;
 }
 
 .discription-buttons {
@@ -657,6 +578,21 @@ del {
         left: 885px;
         top: 31px;
         bottom: 0;
+    }
+
+    .deal-hr-left {
+        width: 3%;
+        height: 2px !important;
+        left: 406px;
+        top: 30px;
+    }
+    .deal-hr-right {
+        width: 3%;
+        height: 2px !important;
+        position: relative;
+        left: 679px;
+        right: 0;
+        bottom: 27px;
     }
 
 }
