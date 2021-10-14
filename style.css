@@ -43,12 +43,15 @@
 .nav-link {
     cursor: pointer;
     color: black;
+    position: relative;
 }
 .nav-link:hover {
     color: #fff !important;
     background-color: rgba(128, 128, 128, 0.377) !important;
     border-top: 2px solid blue;
 }
+
+
 .header-section {
     padding: 0 44px;
 }
@@ -1308,5 +1311,16 @@ del {
     #discription-right-slider {
         display: none !important;
     }
+    .discovery {
+        height: 457px;
+    }
 
+    .discription-row {
+        padding: 22px 0 14px 0;
+    }
+
+    .first-gridrow {
+        margin-bottom: 0 !important;
+    }
+    
 }
