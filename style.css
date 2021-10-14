@@ -201,14 +201,13 @@
 
 .product-overlay {
     position: absolute;
-    top: 259px !important;
+    top: 303px !important;
     right: 0;
     bottom: 0;
     left: 11px !important;
     padding: 1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 20px;
 }
 
 
@@ -255,19 +254,145 @@
     display: flex;
 }
 
+
+
+
+
+
+.product-grid ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.shop-card {
+    list-style: none;
+    background-color: #f0eeee;
+    border: 1px solid #f0eeee;
+    position: relative;
+    height: 400px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 12px;
+    display: inline-block;
+}
+
+.shop-button {
+    display: inline-block;
+    background-color: #f0eeee;
+    padding: 6px;
+    width: 14%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.shop-card:hover{
+    background-color: #fff;
+}
+.shop-card:hover .shop-button {
+    display: block;
+}
+
+.shop-button button {
+    padding: 0 !important;
+}
+
+.shop-button button:hover i {
+    background-color: #cccbcb;
+}
+
+.product-image {
+    width: 100%;
+}
+
+
+li .product-image::before {
+    content: attr(title);
+    background-color: #dc8345;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    padding: 3px 10px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.product-image img {
+    width: 100%;
+    padding-top: 36px;
+}
+
+del {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.deal-price {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.image-detail p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+
+.icon-star-o {
+    color: #e0d111;
+    float: right;
+    font-size: 12px;
+    position: relative;
+    top: 19px;
+}
+
+
+
+
+
+
+
+
+/* 
+.card {
+    height: 130%;
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover .option-button {
+    display: block;
+}
+
 .option-button {
     left: 261px;
     right: 0;
     position: absolute;
+    display: none;
+    cursor: pointer;
+    background-color: rgba(190, 190, 190, 0.938) !important;
 }
 
 
 .button-hover {
     display: none;
     cursor: pointer;
-    background-color: #fff !important;
-    border-color: #fff !important;
-}
+    /* background-color: #fff !important;
+    border-color: #fff !important; */
+/* }
 .button-hover:hover {
     display: block !important;
     background-color: rgba(190, 190, 190, 0.938) !important;
@@ -281,10 +406,10 @@
 .button-hover-b {
     display: none;
     cursor: pointer;
-    background-color: #f4f4f4 !important;
-    border-color: #f4f4f4 !important;
-}
-.button-hover-b:hover {
+    /* background-color: #f4f4f4 !important;
+    border-color: #f4f4f4 !important; */
+/* } */ 
+/* .button-hover-b:hover {
     display: block !important;
     background-color: rgba(190, 190, 190, 0.938) !important;
     display: flex !important;
@@ -292,7 +417,18 @@
     align-items: center !important;
     justify-content: center !important;
     padding: 18px 12px !important;
-}
+} */ 
+
+
+
+
+
+
+
+
+
+
+
 
 
 .discovery {
@@ -342,11 +478,7 @@
 .deal-price {
     color: #6fc446;
 }
-.icon-star-o {
-    color: #e0d111;
-    margin-left: -4px;
-    float: right;
-}
+
 
 .deal-overlay {
     position: absolute;
@@ -488,20 +620,8 @@
         bottom: 27px;
     }
 
-    .option-button {
-        left: 218px;
-        right: 0;
-        position: absolute;
-    }
-
-    .button-hover:hover {
-        padding: 18px 8px !important;
-    }
-
-    .button-hover-b:hover {
-        padding: 18px 8px !important;
-    }
-
+ 
+  
     .deal-overlay {
         position: absolute;
         top: 201px !important;
@@ -578,30 +698,39 @@
         right: 0;
         bottom: 27px;
     }
-    .option-button {
-        left: 171px;
-        right: 0;
-        position: absolute;
-    }
-
-    .button-hover-b:hover {
-        padding: 18px 8px !important;
-    }
+  
     .deal-overlay {
         position: absolute;
-        top: 163px !important;
+        top: 159px !important;
         right: 0;
         bottom: 0;
         left: 0px !important;
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .deal-hr-left {
+        width: 3%;
+        height: 2px !important;
+        position: relative;
+        left: 320px;
+        top: 30px;
+    }
+
+    .deal-hr-right {
+        width: 3%;
+        height: 3px !important;
+        position: relative;
+        left: 591px;
+        right: 0;
+        bottom: 27px;
     }
 
     .product-overlay {
         position: absolute;
-        top: 186px !important;
+        top: 212px !important;
         right: 0;
         bottom: 0;
-        left: 11px !important;
+        left: 0px !important;
         padding: 1rem;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -622,6 +751,10 @@
         top: 31px;
         bottom: 0;
     }
+
+    .shop-card {
+        height: 320px;
+    }
   
 }
 
@@ -639,7 +772,10 @@
     }
     .navbar-nav {
         display: flex;
-        flex-direction: row !important;
+        flex-direction: column;
+    }
+    .navbar-nav .nav-link i {
+        display: none;
     }
 
     .header {
@@ -683,16 +819,6 @@
         bottom: 27px;
     }
 
-    .option-button {
-        left: 111px;
-        right: 0;
-        position: absolute;
-    }
-
-    .button-hover-b:hover {
-        padding: 18px 5px !important;
-    }
-
     .deal-hr-right {
         position: relative;
         left: 489px;
@@ -708,7 +834,7 @@
 
     .deal-overlay {
         position: absolute;
-        top: 116px !important;
+        top: 103px !important;
         right: 0;
         bottom: 0;
         left: 0px !important;
@@ -717,10 +843,10 @@
 
     .product-overlay {
         position: absolute;
-        top: 136px !important;
+        top: 212px !important;
         right: 0;
         bottom: 0;
-        left: 11px !important;
+        left: 0px !important;
         padding: 1rem;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
@@ -732,6 +858,28 @@
     
     #discription-right-slider {
         display: none !important;
+    }
+
+    .shop-card {
+        position: relative;
+        height: 283px;
+        padding: 10px;
+        margin: 6px;
+    }
+
+    .image-detail p {
+        font-size: 16px;
+    }
+    .deal-price {
+        font-size: 14px;
+    }
+    del {
+        font-size: 12px;
+    }
+    .icon-star-o {
+        font-size: 7px;
+        position: relative;
+        top: 11px;
     }
 
       
@@ -751,8 +899,11 @@
     }
     .navbar-nav {
         display: flex;
-        flex-direction: row !important;
+        flex-direction: column;
         justify-content: center;
+    }
+    .navbar-nav .nav-link i {
+        display: none;
     }
 
     .header {
@@ -833,7 +984,7 @@
 
     .product-overlay {
         position: absolute;
-        top: 225px !important;
+        top: 244px !important;
         right: 0;
         bottom: 0;
         left: 11px !important;
@@ -849,11 +1000,30 @@
     #discription-right-slider {
         display: none !important;
     }
-    .option-button {
-        left: 202px;
-        right: 0;
-        position: absolute;
+
+    
+    .shop-card {
+        position: relative;
+        height: 325px;
+        padding: 10px;
+        margin: 6px;
     }
+
+    .image-detail p {
+        font-size: 20px;
+    }
+    .deal-price {
+        font-size: 14px;
+    }
+    del {
+        font-size: 12px;
+    }
+    .icon-star-o {
+        font-size: 10px;
+        position: relative;
+        top: 11px;
+    }
+ 
 
 }
 
@@ -869,8 +1039,11 @@
     }
     .navbar-nav {
         display: flex;
-        flex-direction: row !important;
+        flex-direction: column;
         justify-content: center;
+    }
+    .navbar-nav .nav-link i {
+        display: none;
     }
 
     .header {
@@ -967,11 +1140,37 @@
     #discription-right-slider {
         display: none !important;
     }
-    .option-button {
-        left: 409px;
-        right: 0;
-        position: absolute;
+
+    .shop-card {
+        position: relative;
+        height: 325px;
+        padding: 10px;
+        margin: 6px;
     }
+
+    .image-detail p {
+        font-size: 20px;
+    }
+    .deal-price {
+        font-size: 14px;
+    }
+    del {
+        font-size: 12px;
+    }
+    .icon-star-o {
+        font-size: 10px;
+        position: relative;
+        top: 11px;
+    }
+    .product-grid ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+ 
 
 }
 
@@ -986,13 +1185,16 @@
 
     .navbar-nav {
         display: flex;
-        flex-direction: row !important;
+        flex-direction: column;
         justify-content: center;
         font-size: 14px;
     }
 
     .navbar {
         padding: 0 18px;
+    }
+    .navbar-nav .nav-link i {
+        display: none;
     }
 
     .header {
@@ -1059,12 +1261,6 @@
     #footer-icon {
         font-size: 16px;
         margin-right: 14px;
-    }
-
-    .option-button {
-        left: 285px;
-        right: 0;
-        position: absolute;
     }
 
     .discovery-heading {
