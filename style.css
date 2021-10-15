@@ -2,7 +2,7 @@
 .header {
     background-image: url(./images/shutterstock_628764224.png);
     background-repeat: no-repeat;
-    padding: 80px 0 275px 0;
+    padding: 61px 0 275px 0;
     width: 100%;
     height: 100%;
     position: relative;
@@ -26,6 +26,7 @@
     padding: 0 85px;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
+    color: #000;
 }
 
 
@@ -42,13 +43,32 @@
 }
 .nav-link {
     cursor: pointer;
-    color: black;
+    color: black !important;
     position: relative;
 }
+
+.nav-link:before{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #0560a7;
+    position: absolute;
+    top: -42px;
+    left: 0;
+    display: none;
+}
+
 .nav-link:hover {
     color: #fff !important;
     background-color: rgba(128, 128, 128, 0.377) !important;
-    border-top: 2px solid blue;
+}
+
+.nav-link:hover:before{
+    display: inline;
+}
+
+.nav-link a {
+    color: #000;
 }
 
 
@@ -67,6 +87,7 @@
     line-height: 69px;
     font-size: 50px;
     padding-top: 20px;
+    color: #000;
 }
 .header-sub-title {
     font-family: 'Roboto', sans-serif;
@@ -76,16 +97,17 @@
 
 .header-button {
     position: relative;
-    padding: 8px 40px !important;
     background-color: #1b1f66 !important;
     border: none;
-    margin-bottom: 25px;
+    
+    width: 22%;
+    height: 14%;
 }
 
 .right-arrow {
-    top: 11px;
+    top: 17px;
     position: absolute;
-    left: 117px;
+    left: 127px;
 }
 
 .right-banner {
@@ -135,7 +157,7 @@
 }
 
 .grid-section {
-    padding: 100px 50px 50px 50px;
+    padding: 100px 50px 90px 50px;
 }
 
 .grid-images {
@@ -143,7 +165,6 @@
     height: 100%;
     position: relative;
 }
-
 
 .grid-five {
     width: 100%;
@@ -167,37 +188,22 @@
     left: 20px;
 }
 
+.popular-products {
+    padding: 0 0 50px 0;
+}
 
 .popular-title {
     position: relative;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: black !important;
-}
-
-.popular-hr-left {
-    width: 3%;
-    height: 2px !important;
-    position: relative;
-    left: 424px;
-    top: 30px;
-    color: black !important;
-}
-
-.popular-hr-right {
-    width: 3%;
-    height: 2px !important;
-    position: relative;
-    left: 835px;
-    right: 0;
-    bottom: 27px;
-    color: black !important;
+    margin-bottom: 0 !important;
 }
 
 .popular-heading {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .product-overlay {
@@ -310,10 +316,23 @@
     width: 100%;
 }
 
-
 li .product-image:before {
     content: attr(title);
     background-color: #dc8345;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 0px 8px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.deal .card:before {
+    content: attr(title);
+    background-color: #a9803c;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 100;
@@ -348,7 +367,6 @@ del {
     font-size: 22px;
 }
 
-
 .icon-star-o {
     color: #e0d111;
     float: right;
@@ -357,12 +375,20 @@ del {
     top: 19px;
 }
 
+.deal-overlay .icon-star-o {
+    color: #e0d111;
+    float: right;
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+}
 
 .discovery {
     background-image: url(./images/discovery.png);
     background-repeat: no-repeat;
-    height: 800px;
+    height: 881px;
     width: 100%;
+    margin-bottom: 70px;
 }
 
 .discovery-heading {
@@ -383,29 +409,9 @@ del {
     margin-bottom: 50px;
 }
 
-.deal-hr-left {
-    width: 3%;
-    height: 2px !important;
-    position: relative;
-    left: 490px;
-    top: 30px;
-    color: black !important;
-}
-
-.deal-hr-right {
-    width: 3%;
-    height: 2px !important;
-    position: relative;
-    left: 770px;
-    right: 0;
-    bottom: 27px;
-    color: black !important;
-}
-
 .deal-price {
     color: #6fc446;
 }
-
 
 .deal-overlay {
     position: absolute;
@@ -429,7 +435,6 @@ del {
     justify-content: center;
     cursor: pointer;
 }
-
 
 .discription-back {
     border-right: 1px solid black;
@@ -516,6 +521,11 @@ del {
     .header {
         padding: 80px 0px 185px;
     }
+    .right-arrow {
+        top: 21px;
+        position: absolute;
+        left: 113px;
+    }
     .right-banner-image {
         position: absolute;
         top: 219px;
@@ -601,6 +611,11 @@ del {
 @media (min-width: 992px) and (max-width: 1200px) {
     .main-monogram {
         display: block !important;
+    }
+    .right-arrow {
+        top: 22px;
+        position: absolute;
+        left: 100px;
     }
     .center-monogram {
         display: none;
@@ -705,6 +720,17 @@ del {
                                             /* Portrait tablets and small desktops */
 
 @media (min-width: 768px) and (max-width: 992px) {
+
+    .header-button {
+        width: 34%;
+        height: 11%;
+    }
+
+    .right-arrow {
+        top: 15px;
+        position: absolute;
+        left: 117px;
+    }
 
     .main-monogram {
         display: block !important;
@@ -830,6 +856,17 @@ del {
                                     /* Landscape phones and portrait tablets */
 
 @media (min-width: 564px) and (max-width: 768px) {
+
+    .header-button {
+        width: 44%;
+        height: 16%;
+    }
+
+    .right-arrow {
+        top: 15px;
+        position: absolute;
+        left: 117px;
+    }
     .main-monogram {
         display: block !important;
     }
@@ -970,6 +1007,16 @@ del {
 }
 
 @media (min-width: 480px) and (max-width: 564px) {
+    .header-button {
+        width: 51%;
+        height: 15%;
+    }
+
+    .right-arrow {
+        top: 15px;
+        position: absolute;
+        left: 117px;
+    }
     .main-monogram {
         display: block !important;
     }
@@ -1014,7 +1061,7 @@ del {
         position: absolute !important;
         left: 327px;
         right: 509px;
-        top: 639px;
+        top: 600px;
         bottom: 0;
     }
     .header-section {
@@ -1118,6 +1165,16 @@ del {
 
                                         /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    .header-button {
+        width: 68%;
+        height: 12%;
+    }
+
+    .right-arrow {
+        top: 15px;
+        position: absolute;
+        left: 117px;
+    }
     .main-monogram {
         display: block !important;
     }
@@ -1202,7 +1259,11 @@ del {
 
     #footer-icon {
         font-size: 16px;
-        margin-right: 14px;
+        margin-right: 24px;
+    }
+    #footer-icon-b {
+        color: gray !important;
+        margin: 0 16px;
     }
 
     .discovery-heading {
